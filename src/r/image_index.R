@@ -2,6 +2,7 @@ library(dplyr)
 library(jsonlite)
 
 img_folders <- list.files("assets/img")
+img_folders <- c("POPULAR", setdiff(img_folders, "POPULAR"))
 
 img_files <- list()
 
